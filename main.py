@@ -25,7 +25,8 @@ class Game:
         self.sky_surface = pygame.image.load('graphics/Sky.png').convert()
         self.ground_surface = pygame.image.load('graphics/ground.png').convert()
 
-        # Intro screen
+        # Game over screen
+        # Character
         self.player_stand = pygame.image.load('graphics/Player/player_stand.png').convert_alpha()
         self.player_stand = pygame.transform.rotozoom(self.player_stand, 0, 2)
         self.player_stand_rect = self.player_stand.get_rect(center=(400, 200))

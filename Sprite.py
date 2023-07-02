@@ -57,6 +57,8 @@ class Player(pygame.sprite.Sprite):
             self.rect.x += 5
         if keys[pygame.K_a]:
             self.rect.x -= 5
+        if keys[pygame.K_s]:
+            self.gravity += 1
         # collision with screen
         if self.rect.left <= 0:
             self.rect.left = 0
